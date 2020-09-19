@@ -12,8 +12,7 @@ def prime?(num)
   else
 
     # if num is divisible by a number other than 1 or itself
-    (2..num - 1).to_a.each do |n|
-      binding.pry
+    (2..num - 1).to_a.all? do |n|
       num % n != 0
     end
   end
