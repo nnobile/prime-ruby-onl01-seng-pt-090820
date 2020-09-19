@@ -1,3 +1,5 @@
+require 'pry'
+
 # How do you create a range of numbers?
 #(1..52)
 
@@ -7,5 +9,8 @@
 def prime?(num)
   if num < 2
     false
+  else
+    binding.pry
 end
+
 end
