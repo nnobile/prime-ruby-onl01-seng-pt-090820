@@ -10,7 +10,10 @@ def prime?(num)
   if num < 2
     false
   else
-    binding.pry
+    
+    # if num is divisible by a number other than 1 or itself
+    (2..num - 1).to_a each do |n|
+      binding.pry
 end
 
 end
